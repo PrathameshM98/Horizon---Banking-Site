@@ -1,20 +1,17 @@
-import React from 'react'
+import React from "react";
 
-function HeaderBox({type = "title", title , subtext,
-    user}: HeaderBoxProps) {
+function HeaderBox({ type = "title", title, subtext, user }: HeaderBoxProps) {
   return (
-    <div className='header-box'>
-        <h1 className="header-box-title">
-            {title}
-            {type === 'greeting' && (
-                <span className="text-bankGradient">
-                    &nbsp;{user}
-                </span>
-            )}
-        </h1>
-        <p className='header-box-subtext'>{subtext}</p>
+    <div className="header-box">
+      <h1 className="header-box-title">
+        {title}
+        {type === "greeting" && (
+          <span className="text-bankGradient">&nbsp;{user}</span>
+        )}
+      </h1>
+      <p className="header-box-subtext">{subtext}</p>
     </div>
-  )
+  );
 }
 
-export default HeaderBox
+export default HeaderBox;
